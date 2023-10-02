@@ -589,20 +589,21 @@ border: none;
 .form-btn{
     display: inline-flex;
     align-items: center;
-    width: 165px;
+    position: relative;
+    min-width: 165px;
     height: 40px;
     gap: 16px;
 border-radius: 4px;
 color: #FFF;
 background-color: #4D5AE5;
 padding: 8px 24px;
-background-repeat: no-repeat;
 cursor: pointer;
 }
-.form-btn::after{
-    content: '';
-    width: 24px;
-    height: 24px;
-    background-image: url(../images/Frame-3.svg);
-    
+.form-icon{
+position: absolute;
+content: '';
+right: 104px;
+}
+.form-icon-frame{
+    fill: #FFFFFF;
 }
