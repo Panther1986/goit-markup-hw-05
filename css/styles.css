@@ -543,3 +543,41 @@ background-color: #31D0AA;
 .footer-social-icon{
 fill: #f4f4fd;
 }
+
+.form-footer{
+width: 453px;
+margin: 0 auto;
+}
+.form-text{
+color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-bottom: 16px;
+}
+.form{
+
+}
+.form-email{
+border-radius: 4px;
+padding-right: 24px;
+}
+.form-btn{
+    display: inline-flex;
+    align-items: center;
+    width: 165px;
+    height: 40px;
+    gap: 16px;
+border-radius: 4px;
+background-color: #4D5AE5;
+padding: 8px 24px;
+background-repeat: no-repeat;
+}
+.form-btn::after{
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/Frame-3.svg);
+    
+}
