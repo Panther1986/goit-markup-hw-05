@@ -385,55 +385,54 @@
         </div>
     </div>
     </footer>
-    <div class="backdrop" data-modal>
-        <div class="backdrop-btn-close">
-        <button type="button" class="btn-close" data-modal>
-            <svg class="btn-close-icon" wigth="8" height="8">
-                <use href="./images/icons.svg#icon-close-black-18dp-2"></use>
-            </svg>
-        </button>
-        </div>
 
-        <p class="backdrop-text">Leave your contacts and we will call you back</p>
-        <form class="backdrop-form">
-            <div class="modal-form-items">
-                <label class="modal-form-label">Name</label>
-                <input type="text" class="modal-form-input" name="username" />
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button type="button" class="btn-close">
+                <svg width="8px" height="8px">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2"></use>
+                </svg>
+            </button>
+            <p class="backdrop-text">Leave your contacts and we will call you back</p>
+            <form class="backdrop-form">
+                <div class="modal-form-items">
+                    <label class="modal-form-label">Name</label>
+                    <input type="text" class="modal-form-input" name="username" />
                     <span class="modal-form-icon-name">
                         <svg width="18" height="18">
                             <use href="./images/icons.svg#icon-person-black-18dp"></use>
                         </svg>
-                    </span>                
-            </div>
-
-            <div class="modal-form-items">
-                <label class="modal-form-label">Phone</label>
-                <input type="tel" class="modal-form-input" name="phone" />
+                    </span>
+                </div>
+            
+                <div class="modal-form-items">
+                    <label class="modal-form-label">Phone</label>
+                    <input type="tel" class="modal-form-input" name="phone" />
                     <span class="modal-form-icon-name contact-modal">
                         <svg width="18" height="24">
                             <use href="./images/icons.svg#icon-phone-black-18dp"></use>
                         </svg>
                     </span>
-            </div>
-
-            <div class="modal-form-items">
-                <label class="modal-form-label">Email</label>
-                <input type="email" class="modal-form-input" name="email" />
+                </div>
+            
+                <div class="modal-form-items">
+                    <label class="modal-form-label">Email</label>
+                    <input type="email" class="modal-form-input" name="email" />
                     <span class="modal-form-icon-name contact-modal">
                         <svg width="18" height="24">
                             <use href="./images/icons.svg#icon-email-black-18dp"></use>
                         </svg>
                     </span>
-            </div>
-
-            <div class="modal-form-items-coment">
-                <label class="modal-form-label">
-                    Comment
-                    <textarea name="comment" class="modal-textarea" rows="5" placeholder="Text input"></textarea>
-                </label>
-            </div>
-
-            <div class="modal-form-items-checkbox">
+                </div>
+            
+                <div class="modal-form-items-coment">
+                    <label class="modal-form-label">
+                        Comment
+                        <textarea name="comment" class="modal-textarea" rows="5" placeholder="Text input"></textarea>
+                    </label>
+                </div>
+            
+                <div class="modal-form-items-checkbox">
                     <label class="checkbox-label">
                         <input class="checkbox" type="checkbox" name="check" />
                         <span class="checkbox-label-check">
@@ -442,13 +441,17 @@
                             </svg>
                         </span>
                     </label>
-                   <div class="modal-check-second">
-                <p class="modal-check-text">I accept the terms and conditions of the <a class="check-link" href="">Privacy Policy</a></p>
+                    <div class="modal-check-second">
+                        <p class="modal-check-text">I accept the terms and conditions of the <a class="check-link" href="">Privacy
+                                Policy</a></p>
+                    </div>
+                    <button class="modal-check-btn" type="submit">Send</button>
+            
                 </div>
-                <button class="modal-check-btn" type="submit">Send</button>
-                
-            </div>
-        </form>
+            </form>
+
+        </div>
+        
     </div>
 </body>
 </html>
