@@ -742,75 +742,22 @@ padding-bottom: 16px;
     stroke-width: 1px;
     stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 }
-.checkbox-label{
-    display: inline-block;
-}
-.checkbox{
-    appearance: none;
-    display: inline-block;
-}
-.checkbox-label-check{
-    display: inline-block;
+.checkbox-label::before{
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    display: block;
     width: 16px;
     height: 16px;
-}
-
-.modal-form-items-checkbox{
-color: #8E8F99;
-font-size: 12px;
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 0.04em;
-
-    padding-bottom: 16px;
-}
-.modal-check-second{
-    display: inline-block;
-    height: 16px;
-    padding-left: 8px;
-    margin-bottom: 24px;
-}
-.modal-check-text{
-display: inline-block;
-height: 16px;
-color: #8E8F99;
-font-family: Roboto;
-font-size: 12px;
-font-weight: 400;
-line-height: 1.16;
-letter-spacing: 0.04em;
-
-}
-.check-link{
-    height: 16px;
-    color: #4D5AE5;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.3;
-    letter-spacing: 0.04em;
-    text-decoration-line: underline;
-}
-.modal-check-btn{
-    display: inline-flex;
-    padding: 16px 32px;
-    align-items: center;
-    justify-content: center;
-    width: 169px;
-    height: 56px;
-    gap: 10px;
-    margin-left: 95px;
-    margin-right: 120px;
-    margin-bottom: 24px;
-    border-radius: 4px;
-    background-color: #4D5AE5;
+    content: '';
     cursor: pointer;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--WHITE, #FFF);
-        text-align: center;
-        font-family: Roboto;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
+    border-radius: 4px; 
+}
+.checkbox:checked + .checkbox-label::before{
+background-image: url(../images/click.svg);
+background-repeat: no-repeat;
+background-position: center;
+background-color: #404BBF;
+fill: #F4F4FD;
+}
+.checkbox:focus + .checkbox-label::before {
+    background-image: url(../images/click.svg);
 }
