@@ -784,7 +784,7 @@ margin-bottom: 16px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #8e8f99;;
+    color: #8e8f99;
 }
 
 .checkbox-label-check {
@@ -820,8 +820,6 @@ margin-bottom: 16px;
 .modal-check{
     display: inline-flex;
     align-items: center;
-    width: 16px;
-    height: 16px;
     fill: none;
     stroke-width: 1px;
     stroke: rgba(46, 47, 66, 0.40);
